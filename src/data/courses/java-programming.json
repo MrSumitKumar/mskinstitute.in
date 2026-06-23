@@ -1,0 +1,24 @@
+{
+  "slug": "java-programming",
+  "title": "Java Development",
+  "tagline": "Object-oriented programming and real-world projects",
+  "duration": "4 months",
+  "fee": 10999,
+  "mode": "Online + Offline",
+  "level": "Beginner",
+  "overview": "Comprehensive Java course covering core Java, OOP, collections, and building desktop and web applications.",
+  "syllabus": [
+    "Java Syntax and Basics",
+    "Object-Oriented Programming in Java",
+    "Collections Framework",
+    "Exception Handling",
+    "File IO and Serialization",
+    "Building Simple GUI Applications",
+    "Introduction to Servlets and JSP"
+  ],
+  "careerOpportunities": ["Java Developer", "Backend Developer", "Software Engineer"],
+  "faqs": [
+    { "question": "Is Java suitable for beginners?", "answer": "Yes. We teach from the basics and gradually move to advanced topics." }
+  ],
+  "badge": ""
+}

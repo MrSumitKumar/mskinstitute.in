@@ -1,0 +1,22 @@
+{
+  "slug": "ccc",
+  "title": "CCC (Course on Computer Concepts)",
+  "tagline": "Essential computer literacy for all",
+  "duration": "2 months",
+  "fee": 3999,
+  "mode": "Offline",
+  "level": "Beginner",
+  "overview": "Government recognized course that covers basic computer skills, office applications, and internet usage.",
+  "syllabus": [
+    "Introduction to Computers",
+    "Operating Systems",
+    "MS Office (Word, Excel, PowerPoint)",
+    "Internet and Email",
+    "Basic Typing and File Management"
+  ],
+  "careerOpportunities": ["Office Assistant", "Data Entry Operator"],
+  "faqs": [
+    { "question": "Is this course government-recognized?", "answer": "Yes, CCC is widely recognized as a basic computer literacy certification." }
+  ],
+  "badge": "Value"
+}

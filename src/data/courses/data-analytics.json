@@ -1,0 +1,22 @@
+{
+  "slug": "data-analytics",
+  "title": "Data Analytics",
+  "tagline": "Analyze data and make informed decisions",
+  "duration": "5 months",
+  "fee": 12999,
+  "mode": "Online + Offline",
+  "level": "Intermediate",
+  "overview": "Hands-on data analytics course covering Python for data, SQL, visualization, and real-world case studies.",
+  "syllabus": [
+    "Python for Data Analysis",
+    "pandas and NumPy",
+    "SQL for Data Retrieval",
+    "Data Visualization (Matplotlib, Seaborn)",
+    "Introduction to Machine Learning"
+  ],
+  "careerOpportunities": ["Data Analyst", "Business Analyst", "ETL Developer"],
+  "faqs": [
+    { "question": "Do I need prior programming experience?", "answer": "Basic programming knowledge helps, but we cover essentials in the course." }
+  ],
+  "badge": "In-Demand"
+}

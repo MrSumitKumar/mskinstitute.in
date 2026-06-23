@@ -1,0 +1,22 @@
+{
+  "slug": "adca",
+  "title": "ADCA (Advanced Diploma in Computer Applications)",
+  "tagline": "Comprehensive computer applications training",
+  "duration": "6 months",
+  "fee": 15999,
+  "mode": "Offline",
+  "level": "Beginner",
+  "overview": "A detailed program covering office tools, database basics, and web fundamentals suitable for career starters.",
+  "syllabus": [
+    "MS Office Advanced",
+    "Database Concepts and SQL",
+    "Web Basics: HTML & CSS",
+    "Introduction to Programming",
+    "Practical Projects and Assignments"
+  ],
+  "careerOpportunities": ["Office Manager", "Database Assistant", "Junior Web Developer"],
+  "faqs": [
+    { "question": "Do you provide certificates?", "answer": "Yes, students receive a certificate upon successful completion." }
+  ],
+  "badge": "Premium"
+}

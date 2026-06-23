@@ -1,0 +1,129 @@
+# MSK Institute - Computer Education
+
+## Organization Information
+- **Name:** MSK Institute
+- **Tagline:** Learn Today, Lead Tomorrow
+- **Type:** Computer Education Institute
+- **Location:** Shikohabad, Uttar Pradesh, India
+- **Phone:** 8393042166
+- **Email:** info@mskinstitute.in
+
+## About MSK Institute
+MSK Institute is a professional computer education center dedicated to providing high-quality training in programming, web development, data analytics, and other in-demand IT skills. We focus on practical, hands-on learning to help students and professionals advance their careers.
+
+## Core Values
+- **Quality Education:** Industry-standard curriculum designed by experienced professionals
+- **Practical Learning:** Real-world projects and assignments
+- **Student Success:** Placement assistance and career guidance
+- **Innovation:** Regular updates to keep pace with technology trends
+
+## Courses Offered
+
+### 1. Python Programming
+- **Duration:** 3 months
+- **Fee:** ₹8,999
+- **Description:** Master Python from basics to advanced concepts including OOP, data structures, and libraries
+- **Target:** Beginners to intermediate learners
+
+### 2. Java Development
+- **Duration:** 4 months
+- **Fee:** ₹10,999
+- **Description:** Learn object-oriented programming with Java, including frameworks and real-world projects
+- **Target:** Beginners to intermediate learners
+
+### 3. CCC (Course on Computer Concepts)
+- **Duration:** 2 months
+- **Fee:** ₹3,999
+- **Description:** Government-recognized computer literacy course covering OS, office applications, and internet basics
+- **Target:** All levels
+
+### 4. ADCA (Advanced Diploma in Computer Applications)
+- **Duration:** 6 months
+- **Fee:** ₹15,999
+- **Description:** Comprehensive computer applications training including office tools, database, and web basics
+- **Target:** All levels
+
+### 5. Data Analytics
+- **Duration:** 5 months
+- **Fee:** ₹12,999
+- **Description:** Learn data analysis with Python, SQL, and visualization tools
+- **Target:** Intermediate learners
+
+### 6. Web Development
+- **Duration:** 6 months
+- **Fee:** ₹14,999
+- **Description:** Full-stack web development with HTML, CSS, JavaScript, and modern frameworks
+- **Target:** Beginners to intermediate learners
+
+## Facilities & Services
+- Modern computer labs with latest software
+- Wi-Fi enabled classroom
+- Flexible batch timings (Morning, Afternoon, Evening)
+- Online training options available
+- Expert instructors with industry experience
+- Placement assistance
+- Interview preparation
+- Resume building support
+- Certificate upon completion
+
+## Training Modes
+- **In-Person:** Classroom training at our center in Shikohabad
+- **Online:** Live virtual classes for remote learners
+- **Hybrid:** Flexible combination of online and offline sessions
+
+## Admissions
+- **Admission Type:** Open enrollment (no entrance exam)
+- **Prerequisites:** Basic computer literacy (for most courses)
+- **How to Apply:** Call 8393042166 or visit our center for registration
+- **Batches:** New batches starting every month
+
+## Why Choose MSK Institute?
+1. **Experienced Faculty:** Instructors with 5+ years of industry experience
+2. **Practical Approach:** 70% practical, 30% theoretical learning
+3. **Job-Oriented:** Curriculum aligned with industry requirements
+4. **Affordable Fees:** Competitive pricing with flexible payment plans
+5. **Success Rate:** 85% student placement rate
+6. **Community:** Join a network of successful alumni
+
+## Contact & Location
+**Address:** Shikohabad, Uttar Pradesh, India
+**Phone:** 8393042166
+**Email:** info@mskinstitute.in
+**Website:** mskinstitute.in
+
+**Office Hours:**
+- Monday - Friday: 9:00 AM - 6:00 PM
+- Saturday: 10:00 AM - 4:00 PM
+- Sunday: Closed
+
+## Social Media
+- Facebook: /mskinstitute
+- LinkedIn: /company/mskinstitute
+- Instagram: @mskinstitute
+- YouTube: MSK Institute
+
+## Awards & Recognition
+- ISO 9001:2015 Certified Training Institute
+- Registered with NASSCOM
+- Government-recognized CCC training center
+- Partner with various job placement portals
+
+## FAQ
+**Q: What are the prerequisites?**
+A: Most courses are for beginners. Advanced courses may require basic computer knowledge.
+
+**Q: Do you provide certificates?**
+A: Yes, industry-recognized certificates upon successful course completion.
+
+**Q: Is placement assistance available?**
+A: Yes, we provide job placement support for eligible candidates.
+
+**Q: Can I get a refund?**
+A: 7-day refund policy if not satisfied with the course.
+
+**Q: Are online classes available?**
+A: Yes, both online and offline training options are available.
+
+---
+**Last Updated:** 2026-06-24
+**Document Version:** 1.0

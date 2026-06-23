@@ -1,0 +1,22 @@
+{
+  "slug": "web-development",
+  "title": "Web Development",
+  "tagline": "Build modern, responsive websites",
+  "duration": "6 months",
+  "fee": 14999,
+  "mode": "Online + Offline",
+  "level": "Beginner",
+  "overview": "Full-stack web development course covering HTML, CSS, JavaScript, and modern frameworks to build deployable projects.",
+  "syllabus": [
+    "HTML & CSS Fundamentals",
+    "Responsive Design",
+    "JavaScript Basics",
+    "Frontend Frameworks (React/Next.js)",
+    "Backend Basics and Databases"
+  ],
+  "careerOpportunities": ["Frontend Developer", "Full-stack Developer", "Web Designer"],
+  "faqs": [
+    { "question": "Will I build real projects?", "answer": "Yes — students complete multiple hands-on projects to build their portfolio." }
+  ],
+  "badge": "Most Popular"
+}

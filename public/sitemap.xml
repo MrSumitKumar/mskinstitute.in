@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mskinstitute.in/</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/about</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/contact</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/courses</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/reviews</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/gallery</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/workshops</loc>
+  </url>
+  <!-- Courses -->
+  <url>
+    <loc>https://mskinstitute.in/courses/python-beginner</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/courses/java-programming</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/courses/ccc</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/courses/adca</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/courses/data-analytics</loc>
+  </url>
+  <url>
+    <loc>https://mskinstitute.in/courses/web-development</loc>
+  </url>
+</urlset>

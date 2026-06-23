@@ -1,0 +1,26 @@
+{
+  "slug": "python-beginner",
+  "title": "Python Programming",
+  "tagline": "From basics to real-world projects",
+  "duration": "3 months",
+  "fee": 8999,
+  "mode": "Online + Offline",
+  "level": "Beginner",
+  "overview": "Learn Python programming from fundamentals to advanced topics including OOP, web scraping, and basic data analysis.",
+  "syllabus": [
+    "Python Basics: syntax, variables, data types",
+    "Control Flow and Functions",
+    "Data Structures: lists, tuples, dicts, sets",
+    "Object-Oriented Programming",
+    "File I/O and Modules",
+    "Error Handling and Testing",
+    "Working with Libraries: requests, BeautifulSoup",
+    "Introduction to Data Analysis with pandas"
+  ],
+  "careerOpportunities": ["Junior Python Developer", "Data Analyst Intern", "Automation Tester"],
+  "faqs": [
+    { "question": "Do I need prior programming experience?", "answer": "No. This course is designed for beginners and starts from fundamentals." },
+    { "question": "Is placement assistance provided?", "answer": "Yes, we provide placement guidance and resume support." }
+  ],
+  "badge": "Most Popular"
+}
