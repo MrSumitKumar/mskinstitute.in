@@ -3,9 +3,11 @@ import { generateMeta } from '@/lib/seo';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { LeadForm } from '@/components/shared';
+import { use } from 'react';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const course = getCourseBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const course = getCourseBySlug(slug);
   if (!course) {
     return generateMeta({ title: 'Course Not Found - MSK Institute' });
   }
@@ -16,8 +18,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   });
 }
 
-export default function CourseDetail({ params }: { params: { slug: string } }) {
-  const course = getCourseBySlug(params.slug);
+export default function CourseDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params);
+  const course = getCourseBySlug(slug);
 
   if (!course) {
     return (

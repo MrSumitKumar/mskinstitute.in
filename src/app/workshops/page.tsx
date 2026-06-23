@@ -1,11 +1,10 @@
+'use client';
+
 import dynamic from 'next/dynamic';
-import { Metadata } from 'next';
 import { generateMeta } from '@/lib/seo';
 import { SectionHeader } from '@/components/shared';
 
-const WorkshopForm = dynamic(() => import('@/components/shared/WorkshopForm'), { ssr: false, loading: () => <p>Loading...</p> });
-
-export const metadata: Metadata = generateMeta({ title: 'Workshops - MSK Institute' });
+const WorkshopForm = dynamic(() => import('@/components/shared/WorkshopForm'), { loading: () => <p>Loading...</p> });
 
 const workshops = [
   { id: 'ws-1', title: 'Free Python Workshop', date: '2026-07-05', seats: 30 },

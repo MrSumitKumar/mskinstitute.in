@@ -1,11 +1,10 @@
+'use client';
+
 import dynamic from 'next/dynamic';
-import { Metadata } from 'next';
 import { generateMeta } from '@/lib/seo';
 import { SectionHeader } from '@/components/shared';
 
-const GalleryGrid = dynamic(() => import('@/components/shared/GalleryGrid'), { ssr: false, loading: () => <p>Loading gallery...</p> });
-
-export const metadata: Metadata = generateMeta({ title: 'Gallery - MSK Institute' });
+const GalleryGrid = dynamic(() => import('@/components/shared/GalleryGrid'), { loading: () => <p>Loading gallery...</p> });
 
 export default function GalleryPage() {
   return (
