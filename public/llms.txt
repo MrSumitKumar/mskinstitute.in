@@ -1,53 +1,125 @@
-# MSK Institute - Computer Education
+# MSK Institute
 
-## Organization Information
-- **Name:** MSK Institute
-- **Tagline:** Learn Today, Lead Tomorrow
-- **Type:** Computer Education Institute
-- **Location:** Shikohabad, Uttar Pradesh, India
-- **Phone:** 8393042166
-- **Email:** info@mskinstitute.in
+**Organization**: MSK Institute
+**Type**: Educational Institute
+**Specialty**: Computer Education
 
-## About MSK Institute
-MSK Institute is a professional computer education center dedicated to providing high-quality training in programming, web development, data analytics, and other in-demand IT skills. We focus on practical, hands-on learning to help students and professionals advance their careers.
+## Location
+- **City**: Shikohabad
+- **State**: Uttar Pradesh
+- **Country**: India
+- **Address**: Shikohabad, Uttar Pradesh, India
 
-## Core Values
-- **Quality Education:** Industry-standard curriculum designed by experienced professionals
-- **Practical Learning:** Real-world projects and assignments
-- **Student Success:** Placement assistance and career guidance
-- **Innovation:** Regular updates to keep pace with technology trends
+## Contact Information
+- **Phone**: 8393042166
+- **Email**: info@mskinstitute.in
+- **Website**: https://mskinstitute.in
+
+## About
+MSK Institute is a professional computer education institute in Shikohabad, Uttar Pradesh, focused on providing accessible, high-quality computer education with hands-on training and practical projects. Founded to empower learners with industry-relevant skills and career support to succeed in the tech economy.
 
 ## Courses Offered
 
 ### 1. Python Programming
-- **Duration:** 3 months
-- **Fee:** ₹8,999
-- **Description:** Master Python from basics to advanced concepts including OOP, data structures, and libraries
-- **Target:** Beginners to intermediate learners
+- **Duration**: 3 months
+- **Level**: Beginner to Intermediate
+- **Fee**: ₹8,999
+- **Mode**: Online + Offline
+- **Description**: Master Python from basics to advanced concepts including OOP, web scraping, and basic data analysis.
+- **Topics**: Python Basics, Control Flow, Data Structures, OOP, File I/O, Error Handling, Libraries (requests, BeautifulSoup), Data Analysis (pandas)
+- **Career Opportunities**: Junior Python Developer, Data Analyst Intern, Automation Tester
 
 ### 2. Java Development
-- **Duration:** 4 months
-- **Fee:** ₹10,999
-- **Description:** Learn object-oriented programming with Java, including frameworks and real-world projects
-- **Target:** Beginners to intermediate learners
+- **Duration**: 4 months
+- **Level**: Intermediate
+- **Fee**: ₹10,999
+- **Mode**: Online + Offline
+- **Description**: Object-oriented programming and real-world projects for building scalable applications.
+- **Topics**: Java Basics, OOP Concepts, Collections, Exception Handling, Multithreading, Database Integration
 
 ### 3. CCC (Course on Computer Concepts)
-- **Duration:** 2 months
-- **Fee:** ₹3,999
-- **Description:** Government-recognized computer literacy course covering OS, office applications, and internet basics
-- **Target:** All levels
+- **Duration**: 2 months
+- **Level**: Beginner
+- **Fee**: ₹3,999
+- **Mode**: Online + Offline
+- **Description**: Essential computer literacy for all students covering fundamental computer concepts.
+- **Topics**: Computer Basics, MS Office, Internet, Email, Web Browser
 
 ### 4. ADCA (Advanced Diploma in Computer Applications)
-- **Duration:** 6 months
-- **Fee:** ₹15,999
-- **Description:** Comprehensive computer applications training including office tools, database, and web basics
-- **Target:** All levels
+- **Duration**: 6 months
+- **Level**: Intermediate
+- **Fee**: ₹15,999
+- **Mode**: Online + Offline
+- **Description**: Comprehensive computer applications training covering multiple tools and programming concepts.
+- **Topics**: System Software, MS Office Suite, Database, Basic Programming
 
 ### 5. Data Analytics
-- **Duration:** 5 months
-- **Fee:** ₹12,999
-- **Description:** Learn data analysis with Python, SQL, and visualization tools
-- **Target:** Intermediate learners
+- **Duration**: 5 months
+- **Level**: Intermediate to Advanced
+- **Fee**: ₹12,999
+- **Mode**: Online + Offline
+- **Description**: Analyze data and make informed decisions using Python, SQL, and BI tools.
+- **Topics**: Data Collection, Cleaning, SQL, Python (pandas, numpy), Visualization, Business Intelligence
+
+### 6. Web Development
+- **Duration**: 6 months
+- **Level**: Beginner to Intermediate
+- **Fee**: ₹14,999
+- **Mode**: Online + Offline
+- **Description**: Build modern, responsive websites using HTML, CSS, JavaScript, and frameworks.
+- **Topics**: HTML5, CSS3, JavaScript, React, Node.js, Responsive Design, Web APIs
+
+## Pricing Summary
+- **Starting Fee**: ₹3,999 (CCC)
+- **Most Popular**: Python (₹8,999) and Web Development (₹14,999)
+- **Premium**: ADCA (₹15,999)
+
+## Facilities
+- Modern computer labs with high-speed internet
+- Experienced and knowledgeable instructors
+- Hands-on practical training with real-world projects
+- Placement assistance for suitable candidates
+- Both in-person and online training available
+- Certificate of completion for all courses
+
+## Key Features
+- **Practical Focus**: Real-world projects and industry-relevant curriculum
+- **Flexible Learning**: Online and offline modes available
+- **Career Support**: Resume building and interview preparation
+- **Affordable Pricing**: Competitive fees starting from ₹3,999
+- **Community**: Growing community of 1200+ enrolled students
+
+## Placement & Career Support
+- Professional resume building assistance
+- Interview preparation coaching
+- Job placement assistance for eligible candidates
+- 7-day refund policy for student satisfaction
+- Regular batch schedules throughout the year
+
+## Upcoming Batches (as of 2026)
+- Python Programming: July 5, 2026
+- Web Development: July 10, 2026
+- Data Analytics: July 15, 2026
+
+## API Endpoints
+- **Courses**: GET /api/courses
+- **Lead Submission**: POST /api/lead
+- **Course Details**: GET /api/courses/{slug}
+
+## Public Pages
+- **Home**: https://mskinstitute.in/
+- **Courses**: https://mskinstitute.in/courses
+- **About**: https://mskinstitute.in/about
+- **Contact**: https://mskinstitute.in/contact
+- **Reviews**: https://mskinstitute.in/reviews
+- **Gallery**: https://mskinstitute.in/gallery
+- **Workshops**: https://mskinstitute.in/workshops
+
+## Contact Methods
+- **WhatsApp**: https://wa.me/918393042166?text=Hi MSK Institute, I want to know about courses
+- **Phone**: 8393042166
+- **Email**: info@mskinstitute.in
+- **Location**: Shikohabad, Uttar Pradesh, India
 
 ### 6. Web Development
 - **Duration:** 6 months

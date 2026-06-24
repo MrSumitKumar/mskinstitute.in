@@ -19,21 +19,20 @@ export default function CoursesPage() {
           <p className="text-text-secondary">Browse available courses and choose one that fits your goals.</p>
         </section>
 
-        <section>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {courses.map((course: any) => (
               <CourseCard
                 key={course.slug}
-                name={course.title}
+                title={course.title}
                 description={course.tagline}
                 duration={course.duration}
                 fee={`₹${course.fee}`}
                 badge={course.badge}
-                image={`/images/courses/${course.slug}.jpg`}
+                slug={course.slug}
+                highlights={course.syllabus?.slice(0, 3) || []}
               />
             ))}
           </div>
-        </section>
       </div>
     </main>
   );

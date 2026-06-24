@@ -1,26 +1,29 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { siteConfig } from "@/config/site";
+import type { Metadata } from 'next';
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
+import './globals.css';
+import { siteConfig } from '@/config/site';
+import { AppShell } from '@/components/AppShell';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const inter = Inter({
+  variable: '--font-body',
+  subsets: ['latin'],
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: '--font-heading',
+  subsets: ['latin'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} - ${siteConfig.tagline}`,
   description: siteConfig.description,
-  keywords: ["computer education", "programming", "courses", "training", siteConfig.name],
+  keywords: ['computer education', 'programming', 'courses', 'training', siteConfig.name],
   openGraph: {
     title: siteConfig.name,
     description: siteConfig.description,
-    type: "website",
+    type: 'website',
   },
 };
 
@@ -33,9 +36,9 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${plusJakarta.variable} h-full antialiased`}
     >
-      <body suppressHydrationWarning className="min-h-full flex flex-col bg-background">
+      <body suppressHydrationWarning className="min-h-full flex flex-col bg-background text-text-dark font-sans">
         {/* JSON-LD Organization + LocalBusiness for SEO */}
         <script
           type="application/ld+json"
@@ -74,7 +77,24 @@ export default function RootLayout({
             }),
           }}
         />
-        {children}
+        <AppShell>{children}</AppShell>
+
+        {/* Google Analytics - Replace with your GA4 ID */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
       </body>
     </html>
   );

@@ -2,10 +2,13 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { CheckCircle, AlertCircle, Loader } from 'lucide-react';
 import { siteConfig } from '@/config/site';
+import { submitLead, validateLeadData, type LeadFormData } from '@/services/leads';
 
 interface LeadFormProps {
-  onSubmit?: (data: FormData) => void;
+  source?: 'form' | 'contact' | 'courses' | 'workshop';
+  onSubmit?: (data: LeadFormData) => void;
   className?: string;
 }
 
@@ -16,37 +19,19 @@ interface FormData {
   message: string;
 }
 
-export function LeadForm({ onSubmit, className = '' }: LeadFormProps) {
+export function LeadForm({ source = 'form', onSubmit, className = '' }: LeadFormProps) {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     phone: '',
     course: '',
     message: '',
   });
-  const [errors, setErrors] = useState<Partial<FormData>>({});
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-
-  const validateForm = (): boolean => {
-    const newErrors: Partial<FormData> = {};
-
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
-    }
-
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone is required';
-    } else if (!/^\d{10}$/.test(formData.phone.replace(/\D/g, ''))) {
-      newErrors.phone = 'Phone must be 10 digits';
-    }
-
-    if (!formData.course) {
-      newErrors.course = 'Please select a course';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+  const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({
+    type: null,
+    message: '',
+  });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -54,35 +39,69 @@ export function LeadForm({ onSubmit, className = '' }: LeadFormProps) {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     // Clear error for this field when user starts typing
-    if (errors[name as keyof FormData]) {
-      setErrors((prev) => ({ ...prev, [name]: undefined }));
+    if (errors[name]) {
+      setErrors((prev) => {
+        const newErrors = { ...prev };
+        delete newErrors[name];
+        return newErrors;
+      });
     }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitStatus({ type: null, message: '' });
 
-    if (!validateForm()) {
+    // Validate form
+    const validation = validateLeadData(formData);
+    if (!validation.valid) {
+      setErrors(validation.errors);
       return;
     }
 
     setIsSubmitting(true);
 
     try {
-      // Simulate form submission
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // Prepare lead data
+      const leadData: LeadFormData = {
+        name: formData.name.trim(),
+        phone: formData.phone.replace(/\D/g, ''),
+        course: formData.course,
+        message: formData.message.trim(),
+        source,
+      };
 
-      if (onSubmit) {
-        onSubmit(formData);
+      // Submit lead
+      const result = await submitLead(leadData);
+
+      if (result.success) {
+        setSubmitStatus({
+          type: 'success',
+          message: "We'll contact you within 24 hours!",
+        });
+        setFormData({ name: '', phone: '', course: '', message: '' });
+        setErrors({});
+
+        if (onSubmit) {
+          onSubmit(leadData);
+        }
+
+        // Reset success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus({ type: null, message: '' });
+        }, 5000);
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: result.message,
+        });
       }
-
-      setSubmitSuccess(true);
-      setFormData({ name: '', phone: '', course: '', message: '' });
-
-      // Reset success message after 3 seconds
-      setTimeout(() => setSubmitSuccess(false), 3000);
     } catch (error) {
       console.error('Form submission error:', error);
+      setSubmitStatus({
+        type: 'error',
+        message: 'Something went wrong. Please try again or contact us directly.',
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -97,10 +116,26 @@ export function LeadForm({ onSubmit, className = '' }: LeadFormProps) {
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      {submitSuccess && (
-        <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-700">
-          Thank you! We'll contact you shortly.
-        </div>
+      {submitStatus.type === 'success' && (
+        <motion.div
+          className="p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3 text-green-700"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+        >
+          <CheckCircle className="w-5 h-5 flex-shrink-0" />
+          <span>{submitStatus.message}</span>
+        </motion.div>
+      )}
+
+      {submitStatus.type === 'error' && (
+        <motion.div
+          className="p-4 bg-red-50 border border-red-200 rounded-lg flex items-center gap-3 text-red-700"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+        >
+          <AlertCircle className="w-5 h-5 flex-shrink-0" />
+          <span>{submitStatus.message}</span>
+        </motion.div>
       )}
 
       {/* Name Field */}
@@ -195,9 +230,16 @@ export function LeadForm({ onSubmit, className = '' }: LeadFormProps) {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="btn btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+        className="btn btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
       >
-        {isSubmitting ? 'Sending...' : 'Get Started'}
+        {isSubmitting ? (
+          <>
+            <Loader className="w-4 h-4 animate-spin" />
+            Sending...
+          </>
+        ) : (
+          'Get Started'
+        )}
       </button>
     </motion.form>
   );
